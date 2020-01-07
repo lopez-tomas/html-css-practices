@@ -1,0 +1,3 @@
+2.) ¿Cómo podría abrir un enlace en una ventana nueva?
+
+Agregando a la etiqueta a el atributo href con "_blank" como contenido. EJ: <a href= "_blank">ejemplo.com</a>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fixed Layout</title>
+
+        <style>
+            /* Paleta de colores:
+                wrapper/contenido && border2: #026873
+                head/encabezado && border1: #03A6A6
+                equivalentes: #F2B28D
+                piepagina && border3: #D96E48
+                auxiliar: #BF4545
+            */
+
+            /***************************************
+            NEUTRALIDAD
+            ***************************************/
+            h1, h2, h3, h4, h5, h6, p, html, body{
+                margin: 0;
+                padding: 0;
+            }
+
+            html, body{
+                background-color: white; /* #fffff ó #fff (porque se repite) */
+            }
+
+            body{
+                background-image: url(imagenes/afrodita.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-attachment: fixed;
+                height: 800px;
+            }
+
+            /***************************************
+            ESTRUCTURA
+            ***************************************/
+            #wrapper{
+                width: 960px;
+                height: 600px;
+                background-color: #ff0;
+                margin: 0 auto;
+            }
+
+            #header{
+                height: 100px;
+                background-color: #03A6A6;
+            }
+            
+            #contenido{
+                height: 580px;
+                background-color: #026873;
+            }
+
+            #piepagina{
+                height: 80px;
+                background-color: #D96E48; 
+            }
+
+            #izq{
+                background-color: #026873;
+                float: left;
+                width: 512px;
+                height: 580px;
+                margin-bottom: 0;
+                margin-left: 32px;
+                margin-right: 16px;
+                margin-top: 0;
+            }
+
+            #der{
+                background-color: #026873;
+                float: right;
+                width: 352px;
+                height: 580px;
+                margin-bottom: 0;
+                margin-left: 16px;
+                margin-right: 32px;
+                margin-top: 0;
+            }
+
+            /***************************************
+            CLASES
+            ***************************************/
+            .izquierda{
+                float: left;
+                margin: 10px;
+            }
+
+            .derecha{
+                float: right;
+                margin: 10px;
+            }
+
+            /***************************************
+            ESTILOS
+            ***************************************/
+            p{
+                padding-bottom: 10px;
+                font-size: 1.2em;
+            }
+
+            h1{
+                padding-top: 5px;
+                text-align: center;
+                letter-spacing: .8em;
+            }
+
+            h2{
+                padding: 5px;
+                text-align: center;
+            }
+
+            h3{
+                text-align: center;
+                font-size: .8em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <div id="header">
+                <h1>AFRODITA</h1>
+                <h2>Mitología Griega</h2>
+            </div>
+
+            <div id="contenido">
+                
+                <div id="izq">
+                    <h2>Afrodita Urania y Afrodita Pandemos</h2>
+
+                    <p><img src="Afrodita/afrodita208x312.jpg" class="izquierda">Afrodita es, en la mitología griega, la diosa del amor, la lujuria, la belleza, la sexualidad y 
+                    la reproducción. </p>
+
+                    <p>Aunque a menudo se alude a ella en la cultura moderna como «la diosa del amor», 
+                    es importante señalar que normalmente no era el amor en el sentido cristiano o romántico, sino 
+                    específicamente Eros (atracción física o sexual). Su equivalente romana es la diosa Venus.</p>
+
+                    <p>Afrodita tiene numerosas equivalentes: Inanna en la mitología sumeria, Astarté en la fenicia, 
+                    Turan en la etrusca y Venus en la romana. Tiene paralelismos con diosas indoeuropeas de la aurora, 
+                    tales como Ushás o Aurora.</p>
+
+                    <p>La ‘surgida de la espuma’ Afrodita nació del mar, cerca de Pafos (Chipre) después de que Crono 
+                    cortase durante la Titanomaquia los genitales a Urano con una hoz adamantina y los arrojase tras él 
+                    al mar. En su Teogonía, Hesíodo cuenta que los genitales «fueron luego llevados por el piélago 
+                    durante mucho tiempo.</p>
+                </div>
+
+                <div id="der">
+                    <h2>Orígenes</h2>
+                    
+                    <p><img src="Afrodita/afrodita160x196.jpg" class="derecha">A su alrededor surgía del miembro inmortal una blanca espuma y en medio de ella nació una 
+                    doncella» ya adulta.</p>
+                    <p>Este mito de Venus (el nombre romano de Afrodita) nacida adulta, Venus Anadiómena (‘Venus 
+                    saliendo del mar’), fue una de las representaciones icónicas de Afrodita, famosa por la admiradísima 
+                    pintura de Apeles, hoy perdida, pero descrita por Plinio el Viejo en su Naturalis Historia.</p>
+                    <p>Por esto, Afrodita es de una generación anterior a la de Zeus. Homero cuenta en el libro V de 
+                    la Ilíada otra versión sobre su origen, según la cual sería hija de Dione, quien era la diosa 
+                    oracular original («Dione» significa simplemente ‘diosa’,  ‘diosa’, el genitivo de «Zeus») en 
+                    Dódona.</p>
+                </div>
+
+            </div>
+
+            <div id="piepagina">
+                <h3>&copy; Todos los derechos reservados.</h3>
+            </div>
+
+        </div>
+    </body>
+</html>

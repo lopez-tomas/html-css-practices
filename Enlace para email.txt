@@ -1,0 +1,3 @@
+5.) ¿Cómo puedes crear un enlace para un email?
+
+<a href="mailto:star@hotmail.com">enviar email a la dirección</a>
